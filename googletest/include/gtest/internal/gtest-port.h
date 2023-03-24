@@ -917,7 +917,7 @@ class GTEST_API_ RE {
 
 # endif
 
-  GTEST_DISALLOW_ASSIGN_(RE);
+  void operator=(RE const &) = delete;
 };
 
 #endif  // GTEST_USES_PCRE
